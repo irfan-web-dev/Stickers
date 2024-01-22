@@ -10,14 +10,18 @@
     <nav
       class="flex lg:justify-around justify-between items-center bg-white px-6 pb-2 pt-4 md:pt-6 border-b sticky top-0 z-20"
     >
-      <div class="flex items-center cursor-pointer">
-        <img src="logo.png" />
-        <h4 class="text-xl font-sans font-bold tracking-tight">
-          Doggy Stickers
-        </h4>
-      </div>
+      <a href="index.html">
+        <div class="flex items-center cursor-pointer">
+          <img src="logo.png" />
+          <h4 class="text-xl font-sans font-bold tracking-tight">
+            Doggy Stickers
+          </h4>
+        </div>
+      </a>
       <div>
-        <img class="cursor-pointer" src="carts.png" />
+        <a href="">
+          <img class="cursor-pointer" src="carts.png" />
+        </a>
       </div>
     </nav>
 
@@ -41,8 +45,13 @@
             <div
               class="h-120 w-72 rounded shadow-lg mx-auto border cursor-pointer"
             >
-              <div class="h-72 border-b-2 border-palette-lighter relative">
-                <img src="cart1-img.jpg" />
+              <div
+                class="h-72 border-b-2 border-palette-lighter relative overflow-hidden"
+              >
+                <img
+                  class="transform duration-500 ease-in-out hover:scale-110 absolute"
+                  src="cart1-img.jpg"
+                />
               </div>
               <div class="h-48 relative">
                 <h4
@@ -65,8 +74,13 @@
             <div
               class="h-120 w-72 rounded shadow-lg mx-auto border cursor-pointer"
             >
-              <div class="h-72 border-b-2 border-palette-lighter relative">
-                <img src="cart2-img.jpg" />
+              <div
+                class="h-72 border-b-2 border-palette-lighter relative overflow-hidden"
+              >
+                <img
+                  src="cart2-img.jpg"
+                  class="transform duration-500 ease-in-out hover:scale-110 absolute"
+                />
               </div>
               <div class="h-48 relative">
                 <h4
@@ -89,8 +103,13 @@
             <div
               class="h-120 w-72 rounded shadow-lg mx-auto border cursor-pointer"
             >
-              <div class="h-72 border-b-2 border-palette-lighter relative">
-                <img src="cart3-img.jpg" />
+              <div
+                class="h-72 border-b-2 border-palette-lighter relative overflow-hidden"
+              >
+                <img
+                  src="cart3-img.jpg"
+                  class="transform duration-500 ease-in-out hover:scale-110 absolute"
+                />
               </div>
               <div class="h-48 relative">
                 <h4
@@ -100,6 +119,35 @@
                 </h4>
                 <h5 class="text-lg text-gray-600 p-4 font-light">
                   Look at that crazy and cute face!
+                </h5>
+                <span
+                  class="text-lg font-semibold text-blue-900 absolute bottom-0 right-0 mb-4 pl-8 pr-4 pb-1 pt-2"
+                  >$9.99</span
+                >
+              </div>
+            </div>
+          </a>
+
+          <a href="cart4.html">
+            <div
+              class="h-120 w-72 rounded shadow-lg mx-auto border cursor-pointer"
+            >
+              <div
+                class="h-72 border-b-2 border-palette-lighter relative overflow-hidden"
+              >
+                <img
+                  src="cart4-img.jpg"
+                  class="transform duration-500 ease-in-out hover:scale-110 absolute"
+                />
+              </div>
+              <div class="h-48 relative">
+                <h4
+                  class="text-indigo-800 text-palette-primary text-2xl pt-4 px-4 font-semibold"
+                >
+                  The Player
+                </h4>
+                <h5 class="text-lg text-gray-600 p-4 font-light">
+                  Catch this sticker today!
                 </h5>
                 <span
                   class="text-lg font-semibold text-blue-900 absolute bottom-0 right-0 mb-4 pl-8 pr-4 pb-1 pt-2"
@@ -118,5 +166,7 @@
         <span class="text-blue-900 font-bold cursor-pointer">Irfan Dev</span>
       </h4>
     </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>

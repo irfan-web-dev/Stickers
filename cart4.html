@@ -4,29 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>The Unicorn</title>
+    <title>The Player</title>
   </head>
   <body>
     <nav
       class="flex lg:justify-around justify-between items-center bg-white px-6 pb-2 pt-4 md:pt-6 border-b sticky top-0 z-20"
     >
-      <a href="index.html">
-        <div class="flex items-center cursor-pointer">
-          <img src="logo.png" />
-          <h4 class="text-xl font-sans font-bold tracking-tight">
-            Doggy Stickers
-          </h4>
-        </div>
-      </a>
+      <div class="flex items-center cursor-pointer">
+        <img src="logo.png" />
+        <h4 class="text-xl font-sans font-bold tracking-tight">
+          Doggy Stickers
+        </h4>
+      </div>
       <div>
-        <a href="">
-          <img class="cursor-pointer" src="carts.png" />
-          <span
-            id="shop1"
-            class="hidden absolute top-3 right-3 xl:right-[410px] text-xs bg-yellow-300 text-gray-900 font-semibold rounded-full py-1 px-2"
-            >1</span
-          >
-        </a>
+        <img class="cursor-pointer" src="carts.png" />
       </div>
     </nav>
 
@@ -38,32 +29,22 @@
           <div
             class="w-full md:w-1/2 max-w-md border border-palette-lighter bg-white rounded shadow-lg"
           >
-            <div
-              class="relative h-96 flex justify-center items-center overflow-hidden"
-            >
-              <img
-                class="h-96 w-96 transform duration-500 ease-in-out hover:scale-110 absolute cursor-pointer"
-                id="cart1img"
-                src="cart1-img.jpg"
-              />
+            <div class="relative h-96 flex justify-center items-center">
+              <img class="h-80 w-80" src="cart4-img.jpg" />
             </div>
             <div
               class="flex border-t h-36 space-x-1 w-full justify-center items-center overflow-auto"
-              id="cart1Pics"
             >
               <img
-                id="fCartPic1"
-                src="cart1-img.jpg"
+                src="cart4-img.jpg"
                 class="w-36 h-32 flex-shrink-0 rounded-sm cursor-pointer"
               />
               <img
-                id="fCartPic2"
-                src="unicorn1.webp"
+                src="player1.webp"
                 class="w-36 h-32 flex-shrink-0 rounded-sm cursor-pointer"
               />
               <img
-                id="fCartPic3"
-                src="unicorn2.webp"
+                src="player2.webp"
                 class="w-36 h-32 flex-shrink-0 rounded-sm cursor-pointer"
               />
             </div>
@@ -81,13 +62,10 @@
               <h1
                 class="leading-relaxed font-bold text-3xl text-blue-900 py-2 sm:py-4"
               >
-                The Unicorn
+                The Player
               </h1>
-              <p class="font-medium text-lg">The Exist!</p>
-              <h5
-                id="cart1Price"
-                class="text-2xl text-blue-800 font-medium py-4 px-1"
-              >
+              <p class="font-medium text-lg">Catch this sticker today!</p>
+              <h5 class="text-2xl text-blue-800 font-medium py-4 px-1">
                 $9.99
               </h5>
             </div>
@@ -97,7 +75,6 @@
                   <label class="text-gray-500 text-base">Qty.</label>
                   <input
                     type="number"
-                    id="quantity1"
                     min="1"
                     value="1"
                     class="text-gray-900 border border-gray-300 w-16 p-2 text-center rounded-sm focus:border-slate-500"
@@ -107,16 +84,14 @@
                   <label class="text-gray-500 text-base">Size</label>
                   <select
                     class="border border-gray-300 rounded-sm w-full p-2 text-gray-900"
-                    id="cart1Sizes"
                   >
-                    <option value="3x3">3 x 3</option>
-                    <option value="4x4">4 x 4</option>
-                    <option value="5.5x5.5">5.5 x 5.5</option>
+                    <option>3 x 3</option>
+                    <option>4 x 4</option>
+                    <option>5.5 x 5.5</option>
                   </select>
                 </div>
               </div>
               <button
-                id="addCart1"
                 class="p-3 bg-blue-800 text-white w-full mt-3 rounded-sm font-semibold text-xl flex justify-center items-center hover:bg-blue-900"
               >
                 Add To Cart
@@ -133,7 +108,5 @@
         <span class="text-blue-900 font-bold cursor-pointer">Irfan Dev</span>
       </h4>
     </footer>
-
-    <script src="./index.js"></script>
   </body>
 </html>
