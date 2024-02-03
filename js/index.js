@@ -15,7 +15,7 @@ products.forEach((product) => {
         class="h-72 border-b-2 border-palette-lighter relative overflow-hidden"
       >
         <img
-        src="/images/${product.images[0]}"
+        src="images/${product.images[0]}"
           class="transform duration-500 ease-in-out hover:scale-110 absolute"
         />
       </div>

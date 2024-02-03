@@ -12,10 +12,10 @@ cart.forEach((item) => {
 
   $products.innerHTML += `<tr class="text-sm sm:text-base text-gray-600 text-center">
       <td class="font-primary font-medium px-4 sm:px-6 py-4 flex items-center">
-        <img src="/images/${
+        <img src="images/${
           product.images[0]
         }" class="sm:inline-flex" height="64" width="64" />
-        <a href="product.html" class="pt-1">${product.name}</a>
+        <a href="product.html?id=${product.id}" class="pt-1">${product.name}</a>
       </td>
       <td class="font-primary font-medium px-4 sm:px-6 py-4 hidden sm:table-cell">
         <span class="text-lg">${item.quantity}</span>
@@ -31,7 +31,7 @@ cart.forEach((item) => {
       </td>
       <td class="font-primary font-medium px-4 sm:px-6 py-4">
         <button class="border border-blue-900 hover:bg-blue-100 p-1" id="remove-button">
-          <img src="/images/close.png" class="w-5 h-5" />
+          <img src="images/close.png" class="w-5 h-5" />
         </button>
       </td>
     </tr>`;
