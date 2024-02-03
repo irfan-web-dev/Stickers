@@ -17,11 +17,11 @@ const $cart = document.getElementById("cart");
 $name.innerText = product.name;
 $description.innerText = product.description;
 $price.innerText = `$${product.sizes[0].price}`;
-$mainImg.src = `images/${product.images[0]}`;
+$mainImg.src = `./images/${product.images[0]}`;
 
 product.images.forEach((image) => {
   $images.innerHTML += `<img
-    src=images/${image}
+    src=./images/${image}
     class="w-36 h-32 flex-shrink-0 rounded-sm cursor-pointer"
   />`;
 });
