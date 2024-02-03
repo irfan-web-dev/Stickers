@@ -17,16 +17,16 @@ cart.forEach((item) => {
         }" class="sm:inline-flex" height="64" width="64" />
         <a href="product.html?id=${product.id}" class="pt-1">${product.name}</a>
       </td>
-      <td class="font-primary font-medium px-4 sm:px-6 py-4 hidden sm:table-cell">
+      <td class="font-primary font-medium px-4 sm:px-6 py-4">
         <span class="text-lg">${item.quantity}</span>
       </td>
-      <td class="font-primary font-medium px-4 sm:px-6 py-4 hidden sm:table-cell">
+      <td class="font-primary font-medium px-4 sm:px-6 py-4">
         <span class="text-lg">${size.label}</span>
       </td>
-      <td class="font-primary font-medium px-4 sm:px-6 py-4 hidden sm:table-cell">
+      <td class="font-primary font-medium px-4 sm:px-6 py-4">
         <span class="text-lg">$${size.price}</span>
       </td>
-      <td class="font-primary font-medium px-4 sm:px-6 py-4 hidden sm:table-cell">
+      <td class="font-primary font-medium px-4 sm:px-6 py-4">
         <span class="text-lg">$${item.quantity * size.price}</span>
       </td>
       <td class="font-primary font-medium px-4 sm:px-6 py-4">
